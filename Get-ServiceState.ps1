@@ -1,4 +1,4 @@
-#Script Name: #Get-ServiceState
+#Script Name: Get-ServiceState
 #Creator: Dark-Coffee
 #Version: 1.0.0
 #Updated: 25th September 2019
