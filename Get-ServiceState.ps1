@@ -1,8 +1,10 @@
-#Script Name: Get-ServiceState
-#Creator: Dark-Coffee
-#Version: 1.0.0
-#Updated: 25th September 2019
-#Url: https://github.com/dark-coffee/Get-ServiceState
+<#
+Script Name: Get-ServiceState.ps1
+Author: Dark-Coffee
+Version: 1.0.1
+Updated: 2020-02-06
+Url: https://github.com/dark-coffee/Get-ServiceState
+#>
 
 <#
 .Description
