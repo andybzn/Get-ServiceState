@@ -1,8 +1,8 @@
 <#
 Script Name: Get-ServiceState.ps1
 Author: Dark-Coffee
-Version: 1.0.1
-Updated: 2020-02-06
+Version: 1.0.2
+Updated: 2020-02-09
 Url: https://github.com/dark-coffee/Get-ServiceState
 #>
 
@@ -22,15 +22,9 @@ Get-ServiceState -Name BITS -ComputerName TargetPC
 function Get-ServiceState {
     param (
         [Parameter(Mandatory=$true,ValueFromPipeline=$true)][String]$Name, 
-        [Parameter(Mandatory=$false,ValueFromPipeline=$true)][String]$ComputerName
+        [Parameter(Mandatory=$false)][String]$ComputerName='localhost'
     )
-
-    if($ComputerName -ne ""){
-        $ComputerName = $ComputerName
-    }else{
-        $ComputerName = "localhost"
-    }
-
+  
     $State = (Get-Service -Name $Name -ComputerName $Computername | Select-Object -ExpandProperty Status)
     $State
 }
